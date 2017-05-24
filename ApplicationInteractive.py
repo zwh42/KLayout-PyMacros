@@ -15,6 +15,7 @@ k = layout_view.each_object_selected()
 
 #print(help(layout_view))
 #print(help(k))
-print(next(k))
+#print(next(k))
+
 
 pya.MessageBox.info("2333", "Hello!", pya.MessageBox.Ok) 
