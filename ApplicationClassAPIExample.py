@@ -50,4 +50,6 @@ layout_view = main_window.current_view()
 image = pya.Image(r"C:\Users\wzhao\Desktop\IronMan.png")
 layout_view.insert_image(image)
 
+marker = pya.Marker.new(layout_view)
+marker.set(pya.DBox(-200, -300, -100, -200))
 
