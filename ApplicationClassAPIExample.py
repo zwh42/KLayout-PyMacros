@@ -2,6 +2,9 @@ import pya
 import sys
 sys.path.append(r"C:\Users\wzhao\AppData\Local\Continuum\Anaconda3\envs\py34\Lib")  ##Added other Python package, for KLayout v0.24, Python version is 3.4.2
 sys.path.append(r"C:\Users\wzhao\AppData\Local\Continuum\Anaconda3\envs\py34\Lib\site-packages")
+
+sys.stderr = sys.stdout
+
 import numpy
 
 current_application = pya.Application.instance()
