@@ -86,7 +86,7 @@ class ImageToLayout(pya.QDialog):
             
         self.raw_image = pya.QImage()
         self.raw_image.loadFromData(content)
-        self.raw_image = self.raw_image.convertToFormat(pya.QImage_Format.Format_Grayscale8)        
+        self.raw_image = self.raw_image.convertToFormat(pya.QImage.Format.Format_Grayscale8)        
         
 
         
@@ -109,7 +109,7 @@ class ImageToLayout(pya.QDialog):
                 
         
         pixmap = pya.QPixmap.fromImage(self.raw_image)
-        pixmap = pixmap.scaled(480, 480, Qt_AspectRatioMode.KeepAspectRatio)
+        pixmap = pixmap.scaled(480, 480, pya.Qt.AspectRatioMode.KeepAspectRatio)
         self.raw_image_label.setPixmap(pixmap)      
         self.raw_image_label.show()
         
